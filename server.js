@@ -21,6 +21,5 @@ client.on('message', (channel, tags, message, self) => {
     if (isNotBot){
         client.say(channel, `Message "${message}" was sent by ${tags.username}`)
     }
-	// "Alca: Hello, World!"
 	console.log(`${tags['display-name']}: ${message}`);
 });
